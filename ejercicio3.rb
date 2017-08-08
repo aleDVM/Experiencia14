@@ -67,7 +67,10 @@ if option > 0 && option <= 10
     when 3
       puts 'Type the name to delete'
       name_delete = gets.chomp.capitalize
+
+
       data.each do |k|
+
         if k[:name] == name_delete
           print k
           k.delete(:name)
